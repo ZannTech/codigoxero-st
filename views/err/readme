@@ -1,0 +1,3 @@
+This controller takes care of
+handling page errors, either 404 error 
+or expired session error.

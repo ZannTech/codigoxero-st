@@ -1,0 +1,9 @@
+{
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.23",
+        "twilio/sdk": "^6.38",
+        "mpdf/mpdf": "^8.1",
+        "dompdf/dompdf": "^2.0",
+        "telnyx/telnyx-php": "^2.7"
+    }
+}

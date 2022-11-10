@@ -1,0 +1,7 @@
+a.a-rounded{
+  border-radius: 30px;
+}
+a.a-rounded:hover{
+  border-radius: 20px;
+  background-color: #012e46;
+}

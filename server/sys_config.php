@@ -1,0 +1,24 @@
+<?php
+define('INFO_APP', 'APLICACIÓN HECHA PARA X');
+define('URL_LOGO', Session::get('url_logo'));
+define('TM_IMPRESORA', 80);
+define('APP_NAME', Session::get('app_name'));
+define('FILTER_STRING', 'email');
+define('STRING', 'text');
+define('NUMBER', 'number');
+define('FUNCTION_RESPONSE_SUCCESS', 1);
+define('FUNCTION_RESPONSE_ERROR', -10);
+define('KB', 1024);
+define('MB', 1048576);
+define('GB', 1073741824);
+define('TB', 1099511627776);
+define('SSID', Session::get('ssid_twilio'));
+define('MSN_SSID', Session::get('messaging_service'));
+define('TOKEN', Session::get('token_twilio'));
+define('WHEATHER_KEY',  Session::get('wheather_key'));
+define('MENSAJE_BIENVENIDA', Session::get('mensaje_bienvenida'));
+define('MENSAJE_DEFAULT', Session::get('default_message'));
+define('NUMBER_WSP', Session::get('number_wsp'));
+define('NUMBER_SMS', Session::get('number_sms'));
+define('CODIGO_PAIS', Session::get('codigo_pais'));
+define('USUID', Session::get('usuid'));
