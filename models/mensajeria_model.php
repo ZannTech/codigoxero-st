@@ -115,7 +115,8 @@ class Mensajeria_Model extends Model
                         $value = strtoupper($data[0]);
                         $name = strtoupper($data[1]);
                         $value = trim($value);
-                        $value = quitar_acentos($value);
+                        $value = str_replace('?', '', $value);
+
                         if ($value != '' && $value != 'NUMERO' && $name != 'NOMBRE' && $name != '' && $value != '?NUMERO' && $name != '?NOMBRE') {
                             $msj = str_replace('{{1}}', $name, $msj);
                             $rest = twilio_comm($msj, $type, $media ? $media : null, $value, $lada);
@@ -151,9 +152,9 @@ class Mensajeria_Model extends Model
                 for ($index_row = 1; $index_row <= $rows_total; $index_row++) {
                     $numero = $current_sheet->getCellByColumnAndRow(1, $index_row);
                     $nombre = $current_sheet->getCellByColumnAndRow(2, $index_row);
-                    $numero = quitar_acentos($numero);
                     $nombre = quitar_acentos($nombre);
                     $numero = str_replace(' ', '', $numero);
+                    $numero = str_replace('?', '', $numero);
 
                     if (strtoupper($numero) != "NUMERO" && strtoupper($nombre) != "NOMBRE") {
                         if ($numero != "" && $nombre != "") {
