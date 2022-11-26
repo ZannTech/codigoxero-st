@@ -2,7 +2,6 @@
 <div class="row mt-5">
     <div class="col-lg-4">
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1561154464-82e9adf32764?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" style="height: 200px; object-fit: cover; filter: blur(4px);">
             <div class="card-body">
                 <h5 class="card-title">Asignación de Trabajo</h5>
                 <h6 class="card-subtitle mb-2 text-muted ">Rellene el formulario tal y como se pide para asignar trabajo a coordinadores.<br />
@@ -46,7 +45,7 @@
             <div class="card-body">
                 <div class="row text-center m-t-0 p-l-10 p-r-10 mb-4">
                     <div class="col-12 m-t-20">
-                        <h3 class="m-b-0 font-normal metas-count"></h3>
+                        <h3 class="m-b-0 font-normal metas-count" style="font-size: 30px;"></h3>
                         <h6 class="font-bold m-b-10">Asignaciones</h6>
                     </div>
                 </div>

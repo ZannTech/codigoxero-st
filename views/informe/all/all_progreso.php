@@ -11,13 +11,13 @@
                     ?>
                         <div class="card shadow-xl">
                             <div class="card-header">
-                                <a class="card-link" data-toggle="collapse" href="#<?php echo 'coll_' . $k ?>"><?php echo 'INFORME DE PROGRESO DEL DISTRITO <b>' . $d->detalle->description . '</b>' ?></a>
+                                <a class="card-link" data-bs-toggle="collapse" href="#<?php echo 'coll_' . $k ?>"><?php echo 'INFORME DE PROGRESO DEL DISTRITO <b>' . $d->detalle->description . '</b>' ?></a>
                             </div>
                             <div id="<?php echo 'coll_' . $k ?>" class="collapse" data-parent="#par_inf">
                                 <div class="card-body">
-                                    <div class="progress_area">
-                                        <div class="progress" style="height: 10px;">
-                                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo number_format($pct, 2); ?>%"><?php echo number_format($pct, 2); ?>%</div>
+                                    <div class="progress_area p-4">
+                                        <div class="progress text-white">
+                                        <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:<?php echo number_format($pct, 2); ?>%"><?php echo number_format($pct, 2); ?>%</div>
                                             
                                         </div>
                                         <p>

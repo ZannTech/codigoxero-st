@@ -1,7 +1,6 @@
 <div class="row pt-4">
     <div class="col-lg-5">
         <div class="card border-danger">
-            <img class="card-img-top" src="holder.js/100px180/" alt="">
             <div class="card-body">
                 <h4 class="card-title">Numeros Erroneos</h4>
                 <p class="card-text">Estos son los números que han dado error.</p>
@@ -16,7 +15,7 @@
                     </div>
 
                 </div>
-                <div class="table-responsive m-b-10">
+                <div class="table-responsive m-b-10 mt-4">
                     <table id="table" class="table table-condensed table-hover stylish-table" cellspacing="0" width="100%">
                         <thead class="table-head">
                             <th style="width: 100%;">Número</th>

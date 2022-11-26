@@ -29,7 +29,7 @@
                     </div>
                     <div class="col-6"></div>
                     <div class="col-md-3">
-                        <button class="btn btn-outline-danger btn-rounded send-message export-pdf">Exportar PDF</button>
+                        <button class="btn btn-danger btn-rounded send-message export-pdf">Exportar PDF</button>
                     </div>
                 </div>
             </div>

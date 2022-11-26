@@ -2,11 +2,10 @@
 <div class="row pt-4">
     <div class="col-lg-12">
         <div class="card">
-            <img class="card-img-top" src="<?php echo IMG_PATH ?>card-img/head-img/header.jpg" alt="Header" style="filter: blur(8px);   -webkit-filter: blur(8px); height: 200px; object-fit: cover;" />
             <div class="card-body">
                 <div class="row text-center m-t-0 p-l-10 p-r-10 mb-4">
                     <div class="col-12 m-t-20">
-                        <h3 class="m-b-0 font-normal metas-count"></h3>
+                        <h3 class="m-b-0 font-normal metas-count" style="font-size: 30px;"></h3>
                         <h6 class="font-bold m-b-10">Metas Registradas</h6>
                     </div>
                 </div>
@@ -22,7 +21,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-2 mb-4 text-center">
-                        <button type="button" onclick="crud_meta()" class="btn btn-outline-info btn-rounded col-auto mr-4" data-mdb-ripple-color="dark" title="Agrega Nuevo Distrito"><i class="mdi mdi-plus"></i></button>
+                        <button type="button" onclick="crud_meta()" class="btn btn-info btn-rounded col-auto mr-4" data-mdb-ripple-color="dark" title="Agrega Nuevo Distrito"><i class="mdi mdi-plus"></i></button>
                         <span id="pdf_btn"></span>
                         <span id="excel_btn"></span>
                     </div>
@@ -56,7 +55,7 @@
         <div class="modal-content animated bounceInRight">
             <div class="modal-header">
                 <h4 class="modal-title title_modal lead text-center">-</h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
             </div>
             <div class="modal-body">
                 <input type="hidden" name="" id="id_meta">
@@ -87,7 +86,7 @@
             </div>
             
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                 <button type="submit" class="btn btn-success btn-guardar">Aceptar</button>
             </div>
         </div>

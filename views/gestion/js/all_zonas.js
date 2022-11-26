@@ -38,7 +38,7 @@ function lista_datos() {
         {
           extend: "pdf",
           title: "REPORTE DE ZONAS",
-          className: "btn btn-outline-danger btn-rounded col-auto mr-4",
+          className: "btn btn-danger btn-rounded col-auto mr-4",
           text: "PDF",
           text: '<i class="mdi mdi-file-pdf-box"></i>',
           titleAttr: "Descargar PDF",
@@ -52,7 +52,7 @@ function lista_datos() {
           extend: "excel",
           title: "REPORTE DE ZONAS",
           text: "Excel",
-          className: "btn btn-outline-success btn-rounded col-auto mr-4",
+          className: "btn btn-success btn-rounded col-auto mr-4",
           text: '<i class="mdi mdi-file-excel-outline"></i>',
           titleAttr: "Descargar Excel",
           container: "#excel_btn",
@@ -132,7 +132,7 @@ function lista_datos() {
               var e = `<a class="dropdown-item"  href="javascript: flag_update(${data.id_zone})"><i class="mdi mdi-power accion_activar"></i> Activar</a>`;
             }
             return ` <div class="dropdown">
-                      <button class="btn btn-rounded btn-ou22 tline-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                      <button class="btn btn-rounded btn-ou22 tline-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
                           <i class="mdi mdi-filter-variant-plus"></i>
                       </button>
                       <div class="dropdown-menu">

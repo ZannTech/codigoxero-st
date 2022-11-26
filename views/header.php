@@ -58,6 +58,354 @@ if (Session::get('loggedIn') == true) :
                 height: 400px;
                 width: 100%;
             }
+            
+      /** mixins **/
+/** mixins end **/
+html {
+    box-sizing: border-box;
+    height: 100%;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .page {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .phone {
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 800px;
+  }
+  
+  .chat-root {
+    height: 100%;
+  }
+  
+  .wa-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+  }
+  .wa-container .status-bar {
+    height: 25px;
+    background: #054d44;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 8px;
+  }
+  .wa-container .status-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .wa-container .status-bar div {
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 0 0 8px;
+  }
+  .wa-container .user-bar {
+    height: 55px;
+    background: #075e54;
+    color: #fff;
+    padding: 0 8px;
+    font-size: 24px;
+  }
+  .wa-container .user-bar:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .wa-container .user-bar div {
+    float: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .wa-container .user-bar div.actions {
+    float: right;
+    margin: 0 0 0 20px;
+  }
+  .wa-container .user-bar div.actions.more {
+    margin: 0 12px 0 20px;
+  }
+  .wa-container .user-bar div.actions.attachment i {
+    display: block;
+    transform: rotate(-45deg);
+  }
+  .wa-container .user-bar .user {
+    margin: 0 0 0 8px;
+    width: 36px;
+    height: 36px;
+  }
+  .wa-container .user-bar .user img {
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    width: 100%;
+  }
+  .wa-container .user-bar .user-name {
+    font-size: 16px;
+    margin: 0 0 0 8px;
+    width: 165px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .wa-container .user-bar .user-name span {
+    display: block;
+    font-size: 12px;
+  }
+  .wa-container .bottom-bar {
+    height: 47px;
+    background: #000;
+    color: #fff;
+    font-size: 22px;
+  }
+  .wa-container .bottom-bar div {
+    width: 33.333333%;
+    float: left;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .wa-container .bottom-bar div.triangle i {
+    display: block;
+    transform: rotate(-90deg);
+  }
+  .wa-container .chat-window {
+    height: calc(100% - 152px);
+    position: relative;
+    background: url("http://valeriopierbattista.com/projects/wutsapp/images/dist/wall.jpg");
+    background-size: 100%;
+    box-shadow: inset 0 10px 10px -10px #000000;
+  }
+  .wa-container .chat-window:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .wa-container .chat-window .conversation {
+    width: 100%;
+    overflow: auto;
+    height: calc(100% - 68px);
+    padding: 0 16px;
+  }
+  .wa-container .chat-window .conversation:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .wa-container .chat-window .balloon {
+    padding: 8px;
+    position: relative;
+    color: #000;
+    font-size: 14px;
+    line-height: 18px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    clear: both;
+    margin: 8px 0;
+    max-width: 85%;
+  }
+  .wa-container .chat-window .balloon:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+  .wa-container .chat-window .balloon .data {
+    display: inline-block;
+    padding: 0 20px 0 16px;
+    font-size: 11px;
+    color: #b9b9b9;
+    position: relative;
+    bottom: -5px;
+    float: right;
+    background-repeat: no-repeat;
+    background-position: right 3px;
+    background-color: transparent;
+    background-size: 16px auto;
+  }
+  .wa-container .chat-window .balloon .data.blue {
+    background-image: url("http://wutsapp.net/images/dist/blue.png");
+  }
+  .wa-container .chat-window .balloon img {
+    width: 100%;
+  }
+  .wa-container .chat-window .balloon:first-child {
+    margin: 16px 0 8px;
+  }
+  .wa-container .chat-window .balloon.him {
+    background: #fff;
+    float: left;
+    border-radius: 0px 5px 5px 5px;
+  }
+  .wa-container .chat-window .balloon.him .data {
+    padding: 0 0 0 16px;
+  }
+  .wa-container .chat-window .balloon.him:after {
+    top: 0;
+    left: -10px;
+    border-width: 0px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+  .wa-container .chat-window .balloon.you {
+    background: #e1ffc7;
+    float: right;
+    border-radius: 5px 0px 5px 5px;
+  }
+  .wa-container .chat-window .balloon.you:after {
+    top: 0;
+    right: -10px;
+    border-width: 0px 0 10px 10px;
+    border-color: transparent transparent transparent #e1ffc7;
+  }
+  .wa-container .chat-window .textarea {
+    width: 100%;
+    z-index: 2;
+    left: 0;
+    position: absolute;
+    bottom: 8px;
+    height: 50px;
+    padding: 0 0 0 8px;
+  }
+  .wa-container .chat-window .textarea:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .wa-container .chat-window .textarea ::-webkit-input-placeholder {
+    color: #b9b9b9;
+  }
+  .wa-container .chat-window .textarea ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #b9b9b9;
+  }
+  .wa-container .chat-window .textarea :-ms-input-placeholder {
+    color: #b9b9b9;
+  }
+  .wa-container .chat-window .textarea div,
+  .wa-container .chat-window .textarea textarea {
+    height: 100%;
+    float: left;
+    background: #fff;
+  }
+  .wa-container .chat-window .textarea .emoticons {
+    width: 10%;
+    background: url("http://valeriopierbattista.com/projects/wutsapp/images/dist/smile.png") center center no-repeat #fff;
+    background-size: 20px;
+    border-radius: 5px 0 0 5px;
+  }
+  .wa-container .chat-window .textarea textarea {
+    width: 63%;
+    border: 0;
+    outline: none;
+    padding-top: 14px;
+    resize: none;
+  }
+  .wa-container .chat-window .textarea .photo {
+    width: 10%;
+    border-radius: 0 0 5px 0;
+    position: relative;
+    text-align: center;
+  }
+  .wa-container .chat-window .textarea .photo:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    content: "";
+    top: 0;
+    right: -10px;
+    border-width: 0px 0 10px 10px;
+    border-color: transparent transparent transparent #fff;
+  }
+  .wa-container .chat-window .textarea .photo i {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #7d8488;
+    font-size: 24px;
+  }
+  .wa-container .chat-window .textarea .send-mic {
+    width: 17%;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+  }
+  .wa-container .chat-window .textarea .send-mic .circle-cont {
+    color: #fff;
+    border-radius: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #00897b;
+    width: 48px;
+    height: 48px;
+    box-shadow: 0 1px 0 #00564d;
+  }
+  .wa-container .chat-window .textarea .send-mic .circle-cont i {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+  }
+  
+  .wrapperchat {
+    height: calc(100% - 81px);
+  }
+  
+  .page.nexus6 .phone {
+    background-image: url("http://valeriopierbattista.com/projects/wutsapp/images/dist/nexus6.png");
+    background-size: auto 799px;
+  }
+  .page.nexus6 .wa-container {
+    width: 382px;
+    height: 681px;
+    padding: 6px 0 0;
+  }
+  .page.nexus6 .wa-container .chat-window {
+    height: calc(100% - 55px);
+  }
+  .page.nexus6 .wrapperchat {
+    height: calc(100% - 69px);
+  }
+  
+  .more {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+  }
+  .more a,
+  .more a:visited {
+    padding: 10px 20px;
+    color: black;
+    font-size: 24px;
+    background: yellow;
+  }
+
+  
+  
+
+  
         </style>
         <!-- CORE CSS -->
         <?php
@@ -65,9 +413,7 @@ if (Session::get('loggedIn') == true) :
         ?>
         <!-- modernizr css -->
         <script src="<?php echo ASSETS_PATH ?>js/vendor/modernizr-2.8.3.min.js"></script>
-        <input type="hidden" value="<?php echo URL; ?>" id="url">
-        <input type="hidden" value="<?php echo ASSETS_PATH; ?>" id="assets">
-        <input type="hidden" value="<?php echo IMG_PATH; ?>" id="images">
+       
         <style>
             body.swal2-shown>[aria-hidden=true] {
                 transition: .1s filter;
@@ -79,7 +425,10 @@ if (Session::get('loggedIn') == true) :
         javascript error, please enable JavaScript for loading this paage
     </noscript>
 
-    <!--Sys Helpers-->
+    <!--Sys Helpers--> 
+    <input type="hidden" value="<?php echo URL; ?>" id="url">
+    <input type="hidden" value="<?php echo ASSETS_PATH; ?>" id="assets">
+    <input type="hidden" value="<?php echo IMG_PATH; ?>" id="images">
     <input type="hidden" id="longitud">
     <input type="hidden" id="latitud">
     <input type="hidden" id="file_temp" value="">
@@ -220,60 +569,7 @@ if (Session::get('loggedIn') == true) :
                 <?php else :
                 // EN CASO DE QUE NO ESTÉ LOGEADO RENDERIZA EL HEADER DEL LOGIN
                 ?>
-                    <!DOCTYPE html>
-                    <html class="no-js" lang="es">
-
-                    <head>
-                        <meta charset="utf-8">
-                        <meta http-equiv="x-ua-compatible" content="ie=edge">
-                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-                        <title>
-                            <?php echo dynamic_page_title($_REQUEST['url']); ?>
-                        </title>
-                        <link rel="shortcut icon" type="image/png" href="<?php echo URL ?>favicon.ico">
-                        <link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/bootstrap.min.css">
-                        <link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/font-awesome.min.css">
-                        <link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/themify-icons.css">
-                        <link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/metisMenu.css">
-                        <link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/custom.css">
-                        <link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/owl.carousel.min.css">
-                        <link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/slicknav.min.css">
-                        <!-- amchart css -->
-                        <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-                        <!-- others css -->
-                        <link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/typography.css">
-                        <link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/default-css.css">
-                        <link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/styles.css">
-                        <link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/responsive.css">
-                        <input type="hidden" value="<?php echo URL; ?>" id="url">
-                        <input type="hidden" value="<?php echo ASSETS_PATH; ?>" id="assets">
-                        <input type="hidden" value="<?php echo IMG_PATH; ?>" id="images">
-
-                        <?php
-                        render_resources('css', $this->css);
-                        ?>
-                        <!-- modernizr css -->
-                        <script src="<?php echo ASSETS_PATH ?>js/vendor/modernizr-2.8.3.min.js"></script>
-                        <!-- jquery latest version -->
-                        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                        <script src="https://cdn.jsdelivr.net/npm/disableautofill/src/jquery.disableAutoFill.min.js"></script>
-
-                    </head>
-                    <noscript>
-                        javascript error, please enable JavaScript for loading this paage
-                    </noscript>
-
-                    <body>
-                        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-                        <!-- preloader area start -->
-                        <div id="preloader">
-                            <div class="loader"></div>
-                        </div>
-
+                  
 
                     <?php endif;
                     ?>

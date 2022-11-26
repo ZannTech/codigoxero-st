@@ -19,7 +19,7 @@ function lista_datos() {
             {
                 extend: "pdf",
                 title: "REPORTE DE DISTRITOS",
-                className: "btn btn-outline-danger btn-rounded col-auto mr-4",
+                className: "btn btn-danger btn-rounded col-auto mr-4",
                 text: "PDF",
                 text: '<i class="mdi mdi-file-pdf-box"></i>',
                 titleAttr: "Descargar PDF",
@@ -33,7 +33,7 @@ function lista_datos() {
                 extend: "excel",
                 title: "REPORTE DE DISTRITOS",
                 text: "Excel",
-                className: "btn btn-outline-success btn-rounded col-auto mr-4",
+                className: "btn btn-success btn-rounded col-auto mr-4",
                 text: '<i class="mdi mdi-file-excel-outline"></i>',
                 titleAttr: "Descargar Excel",
                 container: "#excel_btn",
@@ -78,13 +78,13 @@ function lista_datos() {
             {
                 data: "server_route",
                 render: function (data, type, row) {
-                    return `<a class="btn btn-outline-info p-3" target="_blank" href="${data}"><i class="mdi mdi-eye-outline"></i></a>`;
+                    return `<a class="btn btn-info p-3" target="_blank" href="${data}"><i class="mdi mdi-eye-outline"></i></a>`;
                 },
             },
             {
                 data: null,
                 render: function (data, type, row) {
-                    return `<button class="btn btn-outline-danger p-3" onclick="delete_file(${data.id_file})"><i class="mdi mdi-trash-can-outline"></i></button>`;
+                    return `<button class="btn btn-danger p-3" onclick="delete_file(${data.id_file})"><i class="mdi mdi-trash-can-outline"></i></button>`;
                 },
             },
         ],

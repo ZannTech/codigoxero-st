@@ -38,10 +38,10 @@
                             </div>
                         </div>
                         <div class="col-lg-6 mb-3">
-                            <button  type="button" class="btn btn-outline-info col-12 save"><i class="fa-solid fa-floppy-disk fa-bounce"></i> Guardar</button>
+                            <button  type="button" class="btn btn-info col-12 save"><i class="fa-solid fa-floppy-disk fa-bounce"></i> Guardar</button>
                         </div>
                         <div class="col-lg-6 mb-3">
-                            <button type="button" class="btn btn-outline-success col-12 check"><i class="fa-brands fa-whatsapp"></i> Verificar Conexión Whatsapp</button>
+                            <button type="button" class="btn btn-success col-12 check"><i class="fa-brands fa-whatsapp"></i> Verificar Conexión Whatsapp</button>
                         </div>
                         <div class="col-lg-12 mt-2 text-center qr-" style="display: none;">
                             <h3>Código QR</h3>

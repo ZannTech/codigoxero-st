@@ -95,7 +95,7 @@ function lista_datos() {
             {
                 extend: "pdf",
                 title: "REPORTE ASIGNACIONES",
-                className: "btn btn-outline-danger btn-rounded col-auto mr-4",
+                className: "btn btn-danger btn-rounded col-auto mr-4",
                 text: "PDF",
                 text: '<i class="mdi mdi-file-pdf-box"></i>',
                 titleAttr: "Descargar PDF",
@@ -109,7 +109,7 @@ function lista_datos() {
                 extend: "excel",
                 title: "REPORTE ASIGNACIONES",
                 text: "Excel",
-                className: "btn btn-outline-success btn-rounded col-auto mr-4",
+                className: "btn btn-success btn-rounded col-auto mr-4",
                 text: '<i class="mdi mdi-file-excel-outline"></i>',
                 titleAttr: "Descargar Excel",
                 container: "#excel_btn",
@@ -212,8 +212,8 @@ function lista_datos() {
 
                         return data.fecha_fin != null ?  `-` : `
                         <div class="col-lg-12">
-                        <button class="btn btn-outline-danger col-12 mt-1" onclick="delele_assign(${data.id_asignacion})" title="Borrar"><i class="mdi mdi-delete"></i></button>
-                        <button class="btn btn-outline-warning col-12 mt-1" onclick="finish_assign(${data.id_asignacion})" title="Terminar Asignación"><i class="mdi mdi-flag-off"></i></button>
+                        <button class="btn btn-danger col-12 mt-1" onclick="delele_assign(${data.id_asignacion})" title="Borrar"><i class="mdi mdi-delete"></i></button>
+                        <button class="btn btn-warning col-12 mt-1" onclick="finish_assign(${data.id_asignacion})" title="Terminar Asignación"><i class="mdi mdi-flag-off"></i></button>
                     </div>
                         `
                     

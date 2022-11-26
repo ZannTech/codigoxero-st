@@ -1,11 +1,10 @@
 <div class="row pt-4">
     <div class="col-lg-12">
         <div class="card">
-            <img class="card-img-top" src="<?php echo IMG_PATH ?>card-img/head-img/personas.jpg" alt="Personas" style="filter: blur(8px);   -webkit-filter: blur(8px); height: 200px; object-fit: cover;" />
             <div class="card-body">
                 <div class="row text-center m-t-0 p-l-10 p-r-10 mb-4">
                     <div class="col-12 m-t-20">
-                        <h3 class="m-b-0 font-normal usuarios-count"></h3>
+                        <h3 class="m-b-0 font-normal usuarios-count" style="font-size: 30px;"></h3>
                         <h6 class="font-bold m-b-10">Personas Registradas</h6>
                     </div>
                 </div>

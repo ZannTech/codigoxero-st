@@ -9,7 +9,6 @@ if ($this->type == 'internal') {
 
         <div class="col-lg-12">
             <div class="card shadow-xl">
-                <img class="card-img-tops" src="<?php echo URL ?>public/g.gif" alt="Whatsapp" style="height: 300px; object-fit: cover;" />
                 <div class="card-body">
 
                     <h4 class="card-title mt-3">Envio de mensajería masiva.</h4>
@@ -61,7 +60,7 @@ if ($this->type == 'internal') {
                         </div>
                         <div class="col-lg-6 mt-2">
                             <label for="id_zone">Selecciona un archivo, si deseas enviar multimedia.</label>
-                            <button class="btn btn-outline-primary  col-12 btn-rounded select-file"><i class="mdi mdi-upload"></i> Seleccionar Archivo</button>
+                            <button class="btn btn-primary  col-12 btn-rounded select-file"><i class="mdi mdi-upload"></i> Seleccionar Archivo</button>
                         </div>
                         <!-- <div class="col-lg-4 mt-2">
                             <label for="id_zone">Selecciona un archivo <b>.csv, xlsx, xls</b> para enviar a
@@ -139,7 +138,7 @@ if ($this->type == 'internal') {
                             </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-outline-success col-12 btn-rounded send-message"><i class="mdi mdi-send md-18"></i> Enviar mensaje</button>
+                            <button class="btn btn-success col-12 btn-rounded send-message"><i class="mdi mdi-send md-18"></i> Enviar mensaje</button>
                         </div>
                     </div>
                 </div>
@@ -156,7 +155,7 @@ if ($this->type == 'internal') {
             <div class="modal-content animated bounceInRight">
                 <div class="modal-header">
                     <h4 class="modal-title lead">Selecciona un archivo</h4>
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                    <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
                 </div>
                 <div class="modal-body">
                     <div class="containter">
@@ -177,7 +176,7 @@ if ($this->type == 'internal') {
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-rounded" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
@@ -188,7 +187,7 @@ if ($this->type == 'internal') {
             <div class="modal-content animated bounceInRight">
                 <div class="modal-header">
                     <h4 class="modal-title lead">Selecciona un archivo CSV</h4>
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                    <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
                 </div>
                 <div class="modal-body">
                     <div class="containter">
@@ -209,7 +208,7 @@ if ($this->type == 'internal') {
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-rounded" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
@@ -225,7 +224,6 @@ if ($this->type == 'internal') {
 
         <div class="col-lg-12">
             <div class="card shadow-xl">
-                <img class="card-img-tops" src="<?php echo URL ?>public/g.gif" alt="Whatsapp" style="height: 300px; object-fit: cover;" />
                 <div class="card-body">
 
                     <h4 class="card-title mt-3">Envio de mensajería masiva.</h4>
@@ -277,12 +275,12 @@ if ($this->type == 'internal') {
                         </div>
                         <div class="col-lg-6 mt-2">
                             <label for="id_zone">Selecciona un archivo, si deseas enviar multimedia.</label>
-                            <button class="btn btn-outline-primary  col-12 btn-rounded select-file"><i class="mdi mdi-upload"></i> Seleccionar Archivo</button>
+                            <button class="btn btn-primary  col-12 btn-rounded select-file"><i class="mdi mdi-upload"></i> Seleccionar Archivo</button>
                         </div>
                         <div class="col-lg-4 mt-2">
                             <label for="id_zone">Selecciona un archivo <b>.csv, xlsx, xls</b> para enviar a
                                 contactos.</label>
-                            <button class="btn btn-outline-success col-12 btn-rounded select-imp"><i class="mdi mdi-upload"></i> Importar CSV</button>
+                            <button class="btn btn-success col-12 btn-rounded select-imp"><i class="mdi mdi-upload"></i> Importar CSV</button>
                         </div>
                         <div class="col-lg-4 mt-2">
                             <label for="short_phone">Código País</label>
@@ -355,7 +353,7 @@ if ($this->type == 'internal') {
                             </div>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-outline-success col-12 btn-rounded send-message"><i class="mdi mdi-send md-18"></i> Enviar mensaje</button>
+                            <button class="btn btn-success col-12 btn-rounded send-message"><i class="mdi mdi-send md-18"></i> Enviar mensaje</button>
                         </div>
                     </div>
                 </div>
@@ -372,7 +370,7 @@ if ($this->type == 'internal') {
             <div class="modal-content animated bounceInRight">
                 <div class="modal-header">
                     <h4 class="modal-title lead">Selecciona un archivo</h4>
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                    <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
                 </div>
                 <div class="modal-body">
                     <div class="containter">
@@ -393,7 +391,7 @@ if ($this->type == 'internal') {
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-rounded" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
@@ -404,7 +402,7 @@ if ($this->type == 'internal') {
             <div class="modal-content animated bounceInRight">
                 <div class="modal-header">
                     <h4 class="modal-title lead">Selecciona un archivo CSV</h4>
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                    <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
                 </div>
                 <div class="modal-body">
                     <div class="containter">
@@ -425,7 +423,7 @@ if ($this->type == 'internal') {
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-rounded" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>

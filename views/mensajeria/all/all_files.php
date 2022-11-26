@@ -1,7 +1,6 @@
 <div class="row pt-4">
     <div class="col-lg-12">
         <div class="card">
-            <img class="card-img-top" src="<?php echo IMG_PATH ?>card-img/head-img/files.jpeg" alt="Archivos" style="filter: blur(8px);   -webkit-filter: blur(8px); height: 200px; object-fit: cover;" />
             <div class="card-body">
                 <div class="row text-center m-t-0 p-l-10 p-r-10 mb-4">
                     <div class="col-12 m-t-20">
@@ -21,7 +20,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-2 mb-4 text-center">
-                        <button  title="Subir Archivo" class="btn btn-outline-success col-12 p-3 btn-rounded upload_btn"><i class="mdi mdi-upload"></i></button>
+                        <button  title="Subir Archivo" class="btn btn-success col-12 p-3 btn-rounded upload_btn"><i class="mdi mdi-upload"></i></button>
                     </div>
                 </div>
                 <div class="table-responsive m-b-10">
@@ -51,7 +50,7 @@
             <div class="modal-content animated bounceInRight">
                 <div class="modal-header">
                     <h4 class="modal-title lead">Subir Archivos</h4>
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                    <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -79,7 +78,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-rounded" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>

@@ -21,7 +21,7 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-2 mb-4 text-center">
-                        <button type="button" onclick="crud_super()" class="btn btn-outline-info btn-rounded col-auto mr-4" data-mdb-ripple-color="dark" title="Agrega Nuevo Distrito"><i class="mdi mdi-plus"></i></button>
+                        <button type="button" onclick="crud_super()" class="btn btn-info btn-rounded col-auto mr-4" data-mdb-ripple-color="dark" title="Agrega Nuevo Distrito"><i class="mdi mdi-plus"></i></button>
                         <span id="pdf_btn"></span>
                         <span id="excel_btn"></span>
                     </div>
@@ -52,7 +52,7 @@
         <div class="modal-content animated bounceInRight">
             <div class="modal-header">
                 <h4 class="modal-title title_modal lead text-center"></h4>
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
             </div>
             <div class="modal-body">
                 <div class="row floating-labels m-t-40">
@@ -82,7 +82,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                 <button type="submit" class="btn btn-success btn-guardar">Aceptar</button>
             </div>
         </div>

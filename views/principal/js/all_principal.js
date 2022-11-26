@@ -70,7 +70,6 @@ const list_data = (filter = "") => {
         $(".coste").html(`US ` + ((parseInt(data.wsp_env.c) + parseInt(data.sms_env.c)) * 0.050).toFixed(2))
         $(".person_sended").html(data.persons_reg.c);
         $(".district_sended").html(data.district_reg.c);
-        console.log()
 
         $(".zones_sended").html(data.zones_reg.c);
         $(".street_sended").html(data.streets_reg.c);
@@ -130,7 +129,6 @@ const list_data = (filter = "") => {
           // The data for our dataset
           data: config_redes,
         });
-
         if (map) map.remove();
         map = L.map("map").setView([-12.068867, -77.03064], 10);
         var tiles = L.tileLayer(
@@ -192,27 +190,30 @@ const list_data = (filter = "") => {
         $("#par_inf").empty();
 
         let c = 0;
-      
+
 
         if (data.metas.length > 0) {
           for (let y of data.metas) {
             c += 1;
-            if (y.asignacion != false && y.asignacion.fecha_fin == null) {
+            console.log(y)
+            if (y.asignacion != false) {
+              console.log('aaa')
               catg_progress.push(y.detalle.description);
               data_progress.push(y.reporte.c );
               let pct = (parseInt(y.reporte.c) * 100) / y.cant_proposal;
               pct = pct >= 100 ? 100 : pct.toFixed(2);
+              console.log(pct)
               $("#par_inf").append(
                 `
                             <div class="card shadow-xl">
                             <div class="card-header">
-                                <a class="card-link" data-toggle="collapse" href="#col_${c}">INFORME DE PROGRESO DE  <b>${y.detalle.description.toUpperCase()}</b></a>
+                                <a class="card-link" data-bs-toggle="collapse" href="#col_${c}">INFORME DE PROGRESO DE  <b>${y.detalle.description.toUpperCase()}</b></a>
                             </div>
                             <div id="col_${c}" class="collapse" data-parent="#par_inf">
                                 <div class="card-body">
                                     <div class="progress_area">
                                         <div class="progress" style="height: 10px;">
-                                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:${pct}%">${pct}%</div>
+                                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width:${pct}%">${pct}%</div>
                                         </div>
                                         <p>
                                             LA CUADRILLA DE TRABAJO DEL COORDINADOR ${(

@@ -1,7 +1,6 @@
 <div class="row pt-4">
     <div class="col-lg-12">
         <div class="card">
-            <img class="card-img-top" src="<?php echo IMG_PATH ?>card-img/head-img/whatsapp_card.jpg" alt="Whatsapp" style="filter: blur(8px);   -webkit-filter: blur(8px); height: 200px; object-fit: cover;" />
             <div class="card-body">
                 <div class="row text-center m-t-0 p-l-10 p-r-10 mb-4">
                     <div class="col-12 m-t-20">

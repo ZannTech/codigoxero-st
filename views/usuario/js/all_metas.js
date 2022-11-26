@@ -34,7 +34,7 @@ function lista_datos() {
             {
                 extend: "pdf",
                 title: "REPORTE DE METAS",
-                className: "btn btn-outline-danger btn-rounded col-auto mr-4",
+                className: "btn btn-danger btn-rounded col-auto mr-4",
                 text: "PDF",
                 text: '<i class="mdi mdi-file-pdf-box"></i>',
                 titleAttr: "Descargar PDF",
@@ -48,7 +48,7 @@ function lista_datos() {
                 extend: "excel",
                 title: "REPORTE DE METAS",
                 text: "Excel",
-                className: "btn btn-outline-success btn-rounded col-auto mr-4",
+                className: "btn btn-success btn-rounded col-auto mr-4",
                 text: '<i class="mdi mdi-file-excel-outline"></i>',
                 titleAttr: "Descargar Excel",
                 container: "#excel_btn",
@@ -156,14 +156,14 @@ function lista_datos() {
                     if(pct < 100){
                         return `
                         <div class="col-lg-12">
-                            <button class="btn btn-outline-primary" onclick="crud_meta(${data.meta.id_meta},${data.meta.cant_proposal})" title="Editar Meta"><i class="mdi mdi-briefcase-edit-outline"></i></button>
+                            <button class="btn btn-primary" onclick="crud_meta(${data.meta.id_meta},${data.meta.cant_proposal})" title="Editar Meta"><i class="mdi mdi-briefcase-edit-outline"></i></button>
                         </div>
                     `;
                     }else{
                         return `
                         <div class="col-lg-12">
-                            <button class="btn btn-outline-primary" onclick="crud_meta(${data.meta.id_meta},${data.meta.cant_proposal})" title="Editar Meta"><i class="mdi mdi-briefcase-edit-outline"></i></button>
-                            <button class="btn btn-outline-success" onclick="finish(${data.id_meta}, '${data.dni}')" title="Terminar Meta"><i class="mdi mdi-package-variant-closed-check"></i></button>
+                            <button class="btn btn-primary" onclick="crud_meta(${data.meta.id_meta},${data.meta.cant_proposal})" title="Editar Meta"><i class="mdi mdi-briefcase-edit-outline"></i></button>
+                            <button class="btn btn-success" onclick="finish(${data.id_meta}, '${data.dni}')" title="Terminar Meta"><i class="mdi mdi-package-variant-closed-check"></i></button>
                         </div>
                     `;
                     }

@@ -1,11 +1,10 @@
 <div class="row pt-4">
     <div class="col-lg-12">
         <div class="card shadow-2xl">
-            <img class="card-img-top" src="<?php echo IMG_PATH; ?>card-img/head-img/distritos.png" alt="Distritos" style="filter: blur(8px);   -webkit-filter: blur(8px); height: 250px; object-fit: cover;">
             <div class="card-body">
                 <div class="row text-center m-t-0 p-l-10 p-r-10 mb-4">
                     <div class="col-12 m-t-20">
-                        <h3 class="m-b-0 font-normal distritos-count"></h3>
+                        <h3 class="m-b-0 font-normal distritos-count" style="font-size: 30px;"></h3>
                         <h6 class="font-bold m-b-10">Distritos Agregados</h6>
                     </div>
                 </div>
@@ -21,11 +20,11 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-lg-3 mb-4 text-center">
-                        <button type="button" onclick="crud_district()" class="btn btn-outline-info btn-rounded col-auto mr-4" data-mdb-ripple-color="dark" title="Agrega Nuevo Distrito"><i class="mdi mdi-plus"></i></button>
+                        <button type="button" onclick="crud_district()" class="btn btn-info btn-rounded col-auto mr-4" data-mdb-ripple-color="dark" title="Agrega Nuevo Distrito"><i class="mdi mdi-plus"></i></button>
                         <span id="pdf_btn"></span>
                         <span id="excel_btn"></span>
 
-                        <button type="button" class="btn btn-outline-success btn-rounded col-auto mr-4 mt-sm-2 excel_btn" data-mdb-ripple-color="dark" title="Agrega Nuevo Distrito"><i class="mdi mdi-file-excel-outline"></i> Importar</button>
+                        <button type="button" class="btn btn-success btn-rounded col-auto mr-4 mt-sm-2 excel_btn" data-mdb-ripple-color="dark" title="Agrega Nuevo Distrito"><i class="mdi mdi-file-excel-outline"></i> Importar</button>
 
                     </div>
 
@@ -54,7 +53,7 @@
                 <form id="form" method="post">
                     <div class="modal-header">
                         <h4 class="modal-title title_district lead text-center"></h4>
-                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                        <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
                     </div>
                     <div class="modal-body">
                         <div class="row floating-labels m-t-40">
@@ -76,7 +75,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                         <button type="submit" class="btn btn-success btn-guardar">Aceptar</button>
                     </div>
                 </form>
@@ -88,7 +87,7 @@
             <div class="modal-content animated bounceInRight">
                 <div class="modal-header">
                     <h4 class="modal-title lead">Importar desde excel</h4>
-                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                    <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -117,7 +116,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-rounded" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Cancelar</button>
                     <button type="submit" class="btn btn-success check_excel btn-rounded import" disabled>Importar</button>
                 </div>
             </div>

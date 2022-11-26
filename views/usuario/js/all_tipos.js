@@ -32,7 +32,7 @@ function lista_datos() {
             {
                 extend: "pdf",
                 title: "REPORTE DE TIPOS DE USUARIOS",
-                className: "btn btn-outline-danger btn-rounded col-auto mr-4",
+                className: "btn btn-danger btn-rounded col-auto mr-4",
                 text: "PDF",
                 text: '<i class="mdi mdi-file-pdf-box"></i>',
                 titleAttr: "Descargar PDF",
@@ -46,7 +46,7 @@ function lista_datos() {
                 extend: "excel",
                 title: "REPORTE DE TIPOS DE USUARIOS",
                 text: "Excel",
-                className: "btn btn-outline-success btn-rounded col-auto mr-4",
+                className: "btn btn-success btn-rounded col-auto mr-4",
                 text: '<i class="mdi mdi-file-excel-outline"></i>',
                 titleAttr: "Descargar Excel",
                 container: "#excel_btn",

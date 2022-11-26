@@ -5,7 +5,7 @@
             <div class="card-body">
                 <div class="row text-center m-t-0 p-l-10 p-r-10 mb-4">
                     <div class="col-12 m-t-20">
-                        <h3 class="m-b-0 font-normal usuarios-count"></h3>
+                        <h3 class="m-b-0 font-normal usuarios-count" style="font-size: 30px;"></h3>
                         <h6 class="font-bold m-b-10">Tipos de Usuario</h6>
                     </div>
                 </div>
