@@ -53,7 +53,7 @@
                 <form id="form" method="post">
                     <div class="modal-header">
                         <h4 class="modal-title title_district lead text-center"></h4>
-                        <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
                     </div>
                     <div class="modal-body">
                         <div class="row floating-labels m-t-40">
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
                         <button type="submit" class="btn btn-success btn-guardar">Aceptar</button>
                     </div>
                 </form>
@@ -87,7 +87,7 @@
             <div class="modal-content animated bounceInRight">
                 <div class="modal-header">
                     <h4 class="modal-title lead">Importar desde excel</h4>
-                    <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -116,7 +116,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-secondary btn-rounded" data-dismiss="modal">Cancelar</button>
                     <button type="submit" class="btn btn-success check_excel btn-rounded import" disabled>Importar</button>
                 </div>
             </div>

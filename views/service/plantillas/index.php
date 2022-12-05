@@ -67,7 +67,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title text-center" id="exampleModalCenterTitle">¿Como importar?</h5>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -78,7 +78,7 @@
                 <img src="<?php echo IMG_PATH ?>media/help_imp.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-secondary btn-rounded" data-dismiss="modal">Cerrar</button>
             </div>
         </div>
     </div>

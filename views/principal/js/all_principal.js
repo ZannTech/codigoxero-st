@@ -207,7 +207,7 @@ const list_data = (filter = "") => {
                 `
                             <div class="card shadow-xl">
                             <div class="card-header">
-                                <a class="card-link" data-bs-toggle="collapse" href="#col_${c}">INFORME DE PROGRESO DE  <b>${y.detalle.description.toUpperCase()}</b></a>
+                                <a class="card-link" data-toggle="collapse" href="#col_${c}">INFORME DE PROGRESO DE  <b>${y.detalle.description.toUpperCase()}</b></a>
                             </div>
                             <div id="col_${c}" class="collapse" data-parent="#par_inf">
                                 <div class="card-body">

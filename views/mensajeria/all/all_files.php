@@ -50,7 +50,7 @@
             <div class="modal-content animated bounceInRight">
                 <div class="modal-header">
                     <h4 class="modal-title lead">Subir Archivos</h4>
-                    <button type="button" class="close" data-bs-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Cerrar</span></button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-rounded" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-secondary btn-rounded" data-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>

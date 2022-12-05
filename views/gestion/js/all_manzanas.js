@@ -138,7 +138,7 @@ function lista_datos() {
             var e = `<a class="dropdown-item" href="javascript: flag_update(${data.id_street})"><i class="mdi mdi-power"></i> Activar</a>`;
           }
           return ` <div class="dropdown">
-                      <button class="btn btn-rounded btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                      <button class="btn btn-rounded btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
                           <i class="mdi mdi-filter-variant-plus"></i>
                       </button>
                       <div class="dropdown-menu">

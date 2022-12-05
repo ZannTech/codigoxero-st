@@ -11,7 +11,7 @@
                     ?>
                         <div class="card shadow-xl">
                             <div class="card-header">
-                                <a class="card-link" data-bs-toggle="collapse" href="#<?php echo 'coll_' . $k ?>"><?php echo 'INFORME DE PROGRESO DEL DISTRITO <b>' . $d->detalle->description . '</b>' ?></a>
+                                <a class="card-link" data-toggle="collapse" href="#<?php echo 'coll_' . $k ?>"><?php echo 'INFORME DE PROGRESO DEL DISTRITO <b>' . $d->detalle->description . '</b>' ?></a>
                             </div>
                             <div id="<?php echo 'coll_' . $k ?>" class="collapse" data-parent="#par_inf">
                                 <div class="card-body">

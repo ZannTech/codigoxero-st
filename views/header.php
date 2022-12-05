@@ -569,7 +569,60 @@ html {
                 <?php else :
                 // EN CASO DE QUE NO ESTÉ LOGEADO RENDERIZA EL HEADER DEL LOGIN
                 ?>
-                  
+                  <!DOCTYPE html>
+									<html class="no-js" lang="es">
+
+									<head>
+										<meta charset="utf-8">
+										<meta http-equiv="x-ua-compatible" content="ie=edge">
+										<meta name="viewport" content="width=device-width, initial-scale=1.0">
+										<meta name="viewport" content="width=device-width, initial-scale=1">
+
+										<title>
+											<?php echo dynamic_page_title($_REQUEST['url']); ?>
+										</title>
+										<link rel="shortcut icon" type="image/png" href="<?php echo URL ?>favicon.ico">
+										<link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/bootstrap.min.css">
+										<link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/font-awesome.min.css">
+										<link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/themify-icons.css">
+										<link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/metisMenu.css">
+										<link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/custom.css">
+										<link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/owl.carousel.min.css">
+										<link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/slicknav.min.css">
+										<!-- amchart css -->
+										<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+										<!-- others css -->
+										<link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/typography.css">
+										<link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/default-css.css">
+										<link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/styles.css">
+										<link rel="stylesheet" href="<?php echo ASSETS_PATH ?>css/responsive.css">
+										<input type="hidden" value="<?php echo URL; ?>" id="url">
+										<input type="hidden" value="<?php echo ASSETS_PATH; ?>" id="assets">
+										<input type="hidden" value="<?php echo IMG_PATH; ?>" id="images">
+
+										<?php
+										render_resources('css', $this->css);
+										?>
+										<!-- modernizr css -->
+										<script src="<?php echo ASSETS_PATH ?>js/vendor/modernizr-2.8.3.min.js"></script>
+										<!-- jquery latest version -->
+										<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+										<script src="https://cdn.jsdelivr.net/npm/disableautofill/src/jquery.disableAutoFill.min.js"></script>
+
+									</head>
+									<noscript>
+										javascript error, please enable JavaScript for loading this paage
+									</noscript>
+
+									<body>
+										<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+										<!-- preloader area start -->
+										<div id="preloader">
+											<div class="loader"></div>
+										</div>
+
 
                     <?php endif;
                     ?>

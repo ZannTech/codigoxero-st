@@ -9,9 +9,7 @@ require 'libs/View.php';
 require 'libs/Database.php';
 require 'libs/Session.php';
 require 'server/sys_config.php';
-
 require 'libs/Hash.php';
 require 'vendor/autoload.php';
-
 $bootstrap = new Bootstrap();
 $bootstrap->init();

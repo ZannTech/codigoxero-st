@@ -12,9 +12,9 @@ class View {
 			require 'views/' . $name . '.php';	
 		}
 		else {
-			require 'views/headerv2.php';
+			require 'views/header.php';
 			require 'views/' . $name . '.php';
-			require 'views/footer-v2.php';	
+			require 'views/footer.php';	
 		}
 	}
 

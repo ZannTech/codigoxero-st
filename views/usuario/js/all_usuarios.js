@@ -108,7 +108,7 @@ function lista_datos() {
                 data: null,
                 render: function (data, type, row) {
                     return ` <div class="dropdown">
-                      <button class="btn btn-rounded btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                      <button class="btn btn-rounded btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
                           <i class="mdi mdi-filter-variant-plus"></i>
                       </button>
                       <div class="dropdown-menu">
