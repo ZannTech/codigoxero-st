@@ -558,7 +558,7 @@ html {
                                 </h4>
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="<?php echo URL ?>profile/">Mi perfil</a>
-                                    <a class="dropdown-item logout-actioner" href="javascript:;">Salir</a>
+                                    <a class="dropdown-item logout-actioner" href="javascript:void(0);">Salir</a>
                                 </div>
                             </div>
                         </div>

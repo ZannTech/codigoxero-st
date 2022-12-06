@@ -47,7 +47,7 @@
 </div>
 
 <div class="modal inmodal" id="modal_app" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="true">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog modal-md">
         <div class="modal-content animated bounceInRight">
             <div class="modal-header">
                 <h4 class="modal-title lead text-center">Configuración App</h4>
@@ -64,7 +64,7 @@
                     <div class="col-lg-12 pb-2">
                         <div class="form-group">
                             <label for="mensaje_bienvenida">Mensaje Bienvenida</label>
-                            <textarea class="form-control" name="" id="mensaje_bienvenida" rows="3" maxlength="500"><?php echo MENSAJE_BIENVENIDA ?></textarea>
+                            <textarea class="form-control" name="" id="mensaje_bienvenida" rows="10" maxlength="500"><?php echo MENSAJE_BIENVENIDA ?></textarea>
                             <small id="frm_help">0 - 500 Carácteres</small><br />
                         </div>
                     </div>

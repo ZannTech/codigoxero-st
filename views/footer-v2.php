@@ -2,50 +2,50 @@
 if (Session::get('loggedIn') == true) :
 ?>
     </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:./partials/_footer.html -->
+        <footer class="footer mt-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © CodigoXero</span>
+                <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Distributed By: <b>CodigoXero</b></span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> Sistema Tierra - Gestión Territorial</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
     </div>
-    </div>
-    </div>
-    </div>
-    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
 
-    <script>
-        var hostUrl = "<?php echo URL ?>public/assetsv2/";
-    </script>
-    <!--begin::Global Javascript Bundle(mandatory for all pages)-->
-    <script src="<?php echo URL ?>public/assetsv2/plugins/global/plugins.bundle.js"></script>
-    
-    <script src="<?php echo URL ?>public/assetsv2/js/scripts.bundle.js"></script>
+  <!-- base:js -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="<?php echo ASSETS_PATH ?>js/popper.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/i18n/defaults-*.min.js"></script>
-
-    <script>$.fn.selectpicker.Constructor.BootstrapVersion = '5';
-</script>
-    <!--end::Global Javascript Bundle-->
-    <!--begin::Vendors Javascript(used for this page only)-->
-    <script src="<?php echo URL ?>public/assetsv2/plugins/custom/fullcalendar/fullcalendar.bundle.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
- 
-    <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/worldLow.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
-    <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
-    <script src="<?php echo URL ?>public/assetsv2/plugins/custom/datatables/datatables.bundle.js"></script>
-    <!--end::Vendors Javascript-->
-    <!--begin::Custom Javascript(used for this page only)-->
-    <script src="<?php echo URL ?>public/assetsv2/js/widgets.bundle.js"></script>
-    <script src="<?php echo URL ?>public/assetsv2/js/custom/widgets.js"></script>
-    <script src="<?php echo URL ?>public/assetsv2/js/custom/apps/chat/chat.js"></script>
-    <script src="<?php echo URL ?>public/assetsv2/js/custom/utilities/modals/upgrade-plan.js"></script>
-    <script src="<?php echo URL ?>public/assetsv2/js/custom/utilities/modals/create-app.js"></script>
-    <script src="<?php echo URL ?>public/assetsv2/js/custom/utilities/modals/new-target.js"></script>
-    <script src="<?php echo URL ?>public/assetsv2/js/custom/utilities/modals/users-search.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="/public/spica/vendors/chart.js/Chart.min.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="/public/spica/js/off-canvas.js"></script>
+  <script src="/public/spica/js/hoverable-collapse.js"></script>
+  <script src="/public/spica/js/template.js"></script>
+  <!-- endinject -->
+  <!-- plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- Custom js for this page-->
+  <script src="/public/spica/js/dashboard.js"></script>
+  <!-- bootstrap 4 js -->
+    <script src="<?php echo ASSETS_PATH ?>js/bootstrap.min.js"></script>
+    <script src="<?php echo ASSETS_PATH ?>js/owl.carousel.min.js"></script>
+    <script src="<?php echo ASSETS_PATH ?>js/metisMenu.min.js"></script>
+    <script src="<?php echo ASSETS_PATH ?>js/jquery.slimscroll.min.js"></script>
+    <script src="<?php echo ASSETS_PATH ?>js/jquery.slicknav.min.js"></script>
 
     <!-- start chart js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js" integrity="sha256-cHVO4dqZfamRhWD7s4iXyaXWVK10odD+qp4xidFzqTI=" crossorigin="anonymous"></script>
@@ -75,6 +75,7 @@ if (Session::get('loggedIn') == true) :
     <script src="<?php echo ASSETS_PATH; ?>plugins/datatables.net/export/buttons.bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
     <script src="<?php echo ASSETS_PATH ?>plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
@@ -94,17 +95,34 @@ if (Session::get('loggedIn') == true) :
     <script src="https://kit.fontawesome.com/236f1e99b4.js" crossorigin="anonymous"></script>
     <script src="<?php echo URL ?>server/validate.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script>
+    const time = document.querySelector(".clock-container")
+    function getCurrentTime () {
+      const currentDate = new Date(),
+      hours = currentDate.getHours(),
+      minutes = formatTime(currentDate.getMinutes()),
+      seconds = formatTime(currentDate.getSeconds()),
+      formatHours = formatTime(((hours + 11) % 12 + 1)),
+      format = (hours < 12) || (hours == 24)  ? 'AM' : 'PM'
+      time.innerHTML = `${formatHours}:${minutes}:${seconds} <small>${format}</small>`
+    }
 
+    function formatTime (value)  {
+      return value < 10 ? `0${value}` : value
+    }
+
+setInterval(getCurrentTime, 1000);
+</script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- amchart css -->
+        <link href='//fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+        <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <?php
     render_resources('js', $this->js);
     ?>
-    <!--end::Custom Javascript-->
-    <!--end::Javascript-->
-    </body>
-    <!--end::Body-->
+  <!-- End custom js for this page-->
+</body>
 
-    </html>
-
+</html>
 <?php else : ?>
     <script src="<?php echo ASSETS_PATH ?>js/jquery.slimscroll.min.js"></script>
     <script src="<?php echo ASSETS_PATH ?>js/jquery.slicknav.min.js"></script>

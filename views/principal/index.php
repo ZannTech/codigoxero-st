@@ -1,6 +1,5 @@
 
 <style>
-   
     
 </style>
 <div class="form-head d-flex mb-3 align-items-start mt-4">
@@ -8,26 +7,23 @@
         <h2 class="text-black font-w600 mb-0">Panel Principal</h2>
         <p class="mb-0">Bienvenido de nuevo</p>
     </div>
-    <div class="dropdown custom-dropdown">
-        <div class="btn btn-sm btn-dark light d-flex align-items-center svg-btn" data-toggle="dropdown">
+        <div class="btn btn-sm btn-dark light d-flex align-items-center svg-btn selectdate" data-toggle="dropdown">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g>
                     <path d="M22.4281 2.856H21.8681V1.428C21.8681 0.56 21.2801 0 20.4401 0C19.6001 0 19.0121 0.56 19.0121 1.428V2.856H9.71606V1.428C9.71606 0.56 9.15606 0 8.28806 0C7.42006 0 6.86006 0.56 6.86006 1.428V2.856H5.57206C2.85606 2.856 0.560059 5.152 0.560059 7.868V23.016C0.560059 25.732 2.85606 28.028 5.57206 28.028H22.4281C25.1441 28.028 27.4401 25.732 27.4401 23.016V7.868C27.4401 5.152 25.1441 2.856 22.4281 2.856ZM5.57206 5.712H22.4281C23.5761 5.712 24.5841 6.72 24.5841 7.868V9.856H3.41606V7.868C3.41606 6.72 4.42406 5.712 5.57206 5.712ZM22.4281 25.144H5.57206C4.42406 25.144 3.41606 24.136 3.41606 22.988V12.712H24.5561V22.988C24.5841 24.136 23.5761 25.144 22.4281 25.144Z" fill="#FFF"></path>
                 </g>
             </svg>
             <div class="text-left ml-3">
-                <span class="d-block fs-16 selectdate" id="fl_txt">Filtra Periodo</span>
+                <span class="d-block fs-16" id="fl_txt">Filtra Periodo</span>
             </div>
             <i class="fa fa-angle-down scale5 ml-3"></i>
         </div>
-       
-    </div>
-</div>
+       </div>
 <div class="row align-items-start">
     <div class="col-xl-8 col-12 row align-items-start">
         <div class="col-xl-4">
-            <div class="widget-stat card shadow-sm">
-                <div class="card-header text-center">
+            <div class="card shadow-sm">
+                <div class="card-title mt-2 text-center text-center">
                     Whatsapp <br> Enviados
                 </div>
                 <div class="card-body p-4 text-center">
@@ -44,7 +40,7 @@
         </div>
         <div class="col-xl-4">
             <div class="widget-stat card shadow-sm">
-                <div class="card-header text-center">
+                <div class="card-title mt-2 text-center text-center">
                     SMS <br> Enviados
                 </div>
                 <div class="card-body p-4 text-center">
@@ -61,13 +57,13 @@
         </div>
         <div class="col-xl-4">
             <div class="widget-stat card shadow-sm">
-                <div class="card-header text-center">
+                <div class="card-title mt-2 text-center text-center">
                     Personas <br> Registradas
                 </div>
                 <div class="card-body p-4 text-center">
                     <div class="media ai-icon">
                         <span class="mr-3 bgl-primary text-warning">
-                            <i class="fa-solid fa-sms fa-bounce mdi-28px"></i>
+                            <i class="fa-solid fa-user fa-bounce mdi-28px"></i>
                         </span>
                         <div class="media-body">
                             <h3 class="mb-0 text-black"><span class="counter ml-0 person_sended"></span></h3>
@@ -79,7 +75,7 @@
         
         <div class="col-xl-4 mt-4">
             <div class="widget-stat card shadow-sm">
-                <div class="card-header text-center">
+                <div class="card-title mt-2 text-center text-center">
                     Distritos <br> Registrados
                 </div>
                 <div class="card-body p-4 text-center">
@@ -96,7 +92,7 @@
         </div>
         <div class="col-xl-4 mt-4">
             <div class="widget-stat card shadow-sm">
-                <div class="card-header text-center">
+                <div class="card-title mt-2 text-center text-center">
                     Zonas <br> Registradas
                 </div>
                 <div class="card-body p-4 text-center">
@@ -113,7 +109,7 @@
         </div>
         <div class="col-xl-4 mt-4">
             <div class="widget-stat card shadow-sm">
-                <div class="card-header text-center">
+                <div class="card-title mt-2 text-center text-center">
                     Manzanas <br> Registradas
                 </div>
                 <div class="card-body p-4 text-center">
@@ -131,7 +127,7 @@
 
         <div class="col-xl-12 pt-3">
             <div class="card">
-                <div class="card-header">
+                <div class="card-title mt-2 text-center">
                     Mapa de calor
                 </div>
                 <div class="card-body">
@@ -145,7 +141,7 @@
         </div>
         <div class="col-xl-12 pt-3">
             <div class="card">
-                <div class="card-header">
+                <div class="card-title mt-2 text-center">
                     Envió Masivo
                 </div>
                 <div class="card-body">
@@ -159,7 +155,7 @@
         </div>
         <div class="col-xl-12 pt-3">
             <div class="card">
-                <div class="card-header">
+                <div class="card-title mt-2 text-center">
                     Progreso de campo (Gráfico)
                 </div>
                 <div class="card-body">
@@ -176,7 +172,7 @@
     <div class="col-xl-4 row">
         <div class="col-xl-12 w-100 m-3">
             <div class="card">
-                <div class="card-header text-center">
+                <div class="card-title mt-2 text-center text-center">
                     Reporte de personas usando redes sociales (Barras)
                 </div>
                 <div class="card-body">
@@ -186,7 +182,7 @@
         </div>
         <div class="col-xl-12 w-100 m-3">
             <div class="card">
-                <div class="card-header text-center">
+                <div class="card-title mt-2 text-center text-center">
                     Reporte de personas usando redes sociales (Barras)
                 </div>
                 <div class="card-body">
@@ -196,7 +192,7 @@
         </div>
         <div class="col-xl-12 w-100 m-3">
             <div class="card scroll">
-                <div class="card-header">
+                <div class="card-title mt-2 text-center">
                     Progreso de campo visual
                 </div>
                 <div class="card-body">
@@ -209,7 +205,7 @@
         </div>
         <div class="col-xl-12 w-100 m-3">
             <div class="card">
-                <div class="card-header">
+                <div class="card-title mt-2 text-center">
                     El tiempo en Perú
                 </div>
                 <div class="card-body">
@@ -224,7 +220,7 @@
         </div>
         <div class="col-xl-12 w-100 m-3">
             <div class="card">
-                <div class="card-header text-center">
+                <div class="card-title mt-2 text-center text-center">
                     Coste aproximado gastado en Mensajes
                 </div>
                 <div class="card-body">
@@ -237,7 +233,7 @@
         </div>
         <div class="col-xl-12 pt-3">
             <div class="card">
-                <div class="card-header">
+                <div class="card-title mt-2 text-center">
                     Gráfica de personas registradas por zona (Barras)
                 </div>
                 <div class="card-body">
@@ -251,7 +247,7 @@
         </div>
         <div class="col-xl-12 pt-3">
             <div class="card">
-                <div class="card-header">
+                <div class="card-title mt-2 text-center">
                     Gráfica de personas registradas por zona (Pie)
                 </div>
                 <div class="card-body">
@@ -312,3 +308,4 @@
         </div>
     </div>
 </div>
+

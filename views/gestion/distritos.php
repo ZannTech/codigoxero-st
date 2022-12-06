@@ -1,5 +1,5 @@
 <div class="row pt-4">
-    <div class="col-lg-12">
+    <div class="col-lg-9">
         <div class="card shadow-2xl">
             <div class="card-body">
                 <div class="row text-center m-t-0 p-l-10 p-r-10 mb-4">
@@ -43,6 +43,24 @@
                             </tbody>
                         </table>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title h1 text-center">¿Qué es?</h4>
+                <div class="alert alert-success" role="alert">
+                    <strong>La gestión de distritos se basa en que puedas registrar a tus usuarios en un distrito, el app movil pueda categorizar dependiendo de la localidad del usuario, es necesario tener registrado un distrito ya que en cierta parte es la rama padre de la gestión.</strong>
+                </div>
+                <h4 class="card-title h1 text-center">¿Qué hacer?</h4>
+                <div class="alert alert-warning" role="alert">
+                    <strong>Para registrar un distrito necesitas el nombre y el estado en el que lo necesitas.<br/>Un ejemplo registras el Distrito aguirre y le asignas el estado inactivo; este no se mostrará como disponible.</strong>
+                </div>
+                <h4 class="card-title h1 text-center">¿Y esos botones?</h4>
+                <div class="alert alert-info" role="alert">
+                    <strong>Los botones en cierta parten hace alguna operación en especifico, agregan, exportan, importan, etc. <br/>Anda!, navega sobre ellos.</strong>
                 </div>
             </div>
         </div>
