@@ -625,8 +625,8 @@ if (Session::get('loggedIn') == true) :
               <span class="mdi mdi-menu"></span>
             </button>
             <div class="navbar-brand-wrapper">
-              <a class="navbar-brand brand-logo w-100" href="index.html"><img style="max-width: 50px;" src="/public/st-def.png" alt="logo" /></a>
-              <a class="navbar-brand brand-logo-mini" href="index.html"><img style="max-width: 50px;" src="/public/st-def.png" alt="logo" /></a>
+              <a class="navbar-brand brand-logo w-100" href="<?php echo URL ?>"><img style="max-width: 50px;" src="/public/st-def.png" alt="logo" /></a>
+              <a class="navbar-brand brand-logo-mini" href="<?php echo URL ?>"><img style="max-width: 50px;" src="/public/st-def.png" alt="logo" /></a>
             </div>
             <h4 class="font-weight-bold mb-0 d-none d-md-block mt-1">HOLA!, <?php
                                                                             echo Session::get('description')

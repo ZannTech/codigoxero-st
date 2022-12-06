@@ -1,8 +1,20 @@
+<style>
+    input{
+        background-color: transparent;
+        color: white;
+        border-bottom: 1px solid #ffffff21 !important;
+    }
+    label, .ti-lock, .ti-user{
+        color: white !important;
+    }
+</style>
 <div class="login-area login-bg">
     <div class="container">
-        <div class="login-box ptb--100">
-            <form class="btr-card" id="frm_login" autocomplete="off">
-                <div class="login-form-head btr-card">
+        <div class="login-box ptb--100" >
+            <form class="btr-card" id="frm_login" autocomplete="off" style="background-color: rgba(255, 255, 255, 0.3);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);">
+                <div class="login-form-head btr-card" >
                     <h4>Inicia Sesión</h4>
                     <p>Ingresa con las claves de usuario proporcionadas.</p>
                 </div>
@@ -27,7 +39,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="submit-btn-area">
+                    <div class="submit-btn-area btn-light-facebook mt-4">
                         <button id="form_submit" type="submit">Ingresar <i class="ti-arrow-right"></i></button>
                     </div>
 
