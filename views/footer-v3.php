@@ -75,11 +75,11 @@ if (Session::get('loggedIn') == true) :
     </div>
   </body>
   <!-- plugin for charts  -->
-  <script src="public/argon/js/plugins/chartjs.min.js" async></script>
+  <script src="/public/argon/js/plugins/chartjs.min.js" async></script>
   <!-- plugin for scrollbar  -->
-  <script src="public/argon/js/plugins/perfect-scrollbar.min.js" async></script>
+  <script src="/public/argon/js/plugins/perfect-scrollbar.min.js" async></script>
   <!-- main script file  -->
-  <script src="public/argon/js/argon-dashboard-tailwind.js?v=1.0.1" async></script>
+  <script src="/public/argon/js/argon-dashboard-tailwind.js?v=1.0.1" async></script>
 </html>
 
 <?php
