@@ -1,6 +1,6 @@
 <?php
 
-if (Session::get('loggedIn') == true) :
+if (Session::get('loggedIn') == true):
     // VERIFICA QUE ESTÉ LOGEADO
     // EN CASO DE QUE SI RENDERIZA TODO EL HEADER DEL DASHBOARD
 ?>
