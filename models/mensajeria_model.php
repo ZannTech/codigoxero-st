@@ -14,6 +14,7 @@ class Mensajeria_Model extends Model
     {
         return $this->db->query("SELECT * FROM T_TEMPLATE_MSJ WHERE id_customer = {$this->id_usu}")->fetchAll(PDO::FETCH_OBJ);
     }
+    
     public function get_distritos()
     {
         return $this->db->query("SELECT * FROM T_DISTRICTS WHERE id_customer = {$this->id_usu}")->fetchAll(PDO::FETCH_OBJ);

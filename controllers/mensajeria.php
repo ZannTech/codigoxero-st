@@ -9,6 +9,7 @@ class Mensajeria extends Controller
     {
         parent::__construct();
     }
+  
     function index()
     {
         header("Location: " . URL . 'mensajeria/app');

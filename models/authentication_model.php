@@ -6,6 +6,7 @@ class Authentication_model extends Model
     {
         parent::__construct();
     }
+   
     public function auth_login($req)
     {
         $user = sanitize($req['user'], STRING);

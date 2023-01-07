@@ -12,6 +12,7 @@ class Service_Model extends Model
     {
         parent::__construct();
     }
+   
     public function new_file_bd($request)
     {
         $route = $request['route'];

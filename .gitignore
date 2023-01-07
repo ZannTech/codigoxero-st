@@ -1,3 +1,4 @@
 .vscode/
 vendor/
+cgi-bin.zip
 error_log/
